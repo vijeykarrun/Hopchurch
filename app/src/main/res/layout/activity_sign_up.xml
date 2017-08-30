@@ -15,7 +15,7 @@
         android:layout_below="@id/password"
         android:layout_marginTop="20.0dip"
         android:background="@android:color/transparent"
-        android:text="LMP Dates"
+        android:text="LMP Date"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="@color/colorgreypp" />
     <Button android:id="@id/register" android:background="@drawable/createaccountbutton" android:layout_width="150.0dip" android:layout_height="90.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="18.0dip" android:layout_toLeftOf="@id/textView" android:layout_below="@id/parent" />
