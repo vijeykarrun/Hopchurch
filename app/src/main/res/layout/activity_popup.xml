@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="weekclick"
+            android:text="Weeks"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:textColorLink="?android:textColorLink" />
+
+        <Button
+            android:id="@id/button3"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/button4"
+            android:layout_below="@id/textView6"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button13"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button12"
+            android:layout_alignBottom="@id/button12"
+            android:layout_alignLeft="@id/button8"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="13"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button14"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button13"
+            android:layout_alignBottom="@id/button13"
+            android:layout_alignLeft="@id/button9"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="14"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button18"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button17"
+            android:layout_alignBottom="@id/button17"
+            android:layout_alignLeft="@id/button13"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="18"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button19"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button18"
+            android:layout_alignBottom="@id/button18"
+            android:layout_alignLeft="@id/button14"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="19"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button24"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button23"
+            android:layout_alignBottom="@id/button23"
+            android:layout_alignLeft="@id/button19"
+            android:layout_alignRight="@id/button19"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="24"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button27"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button26"
+            android:layout_alignBottom="@id/button26"
+            android:layout_alignLeft="@id/button22"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="27"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button28"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button27"
+            android:layout_alignBottom="@id/button27"
+            android:layout_alignLeft="@id/button23"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="28"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button29"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button28"
+            android:layout_alignBottom="@id/button28"
+            android:layout_alignLeft="@id/button24"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="29"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button32"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button31"
+            android:layout_alignBottom="@id/button31"
+            android:layout_alignLeft="@id/button27"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="32"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button34"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="34"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor"
+            android:layout_alignBaseline="@+id/button33"
+            android:layout_alignBottom="@+id/button33"
+            android:layout_alignLeft="@+id/button29"
+            android:layout_alignStart="@+id/button29" />
+
+        <Button
+            android:id="@id/button38"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button37"
+            android:layout_alignBottom="@+id/button37"
+            android:layout_alignLeft="@+id/button33"
+            android:layout_alignStart="@+id/button33"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="38"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button25"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button24"
+            android:layout_alignBottom="@id/button24"
+            android:layout_alignLeft="@id/button20"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="25"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button30"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button29"
+            android:layout_alignBottom="@id/button29"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="30"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button35"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button34"
+            android:layout_alignBottom="@id/button34"
+            android:layout_alignLeft="@id/button30"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="35"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button40"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button39"
+            android:layout_alignBottom="@+id/button39"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="40"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button10"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button9"
+            android:layout_alignBottom="@id/button9"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="10"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button11"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/button6"
+            android:layout_below="@id/button6"
+            android:layout_marginTop="19.0dip"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="11"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button16"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/button11"
+            android:layout_below="@id/button11"
+            android:layout_marginTop="21.0dip"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="16"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button21"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/button16"
+            android:layout_below="@id/button16"
+            android:layout_marginTop="18.0dip"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="21"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button22"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button21"
+            android:layout_alignBottom="@id/button21"
+            android:layout_alignLeft="@id/button12"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="22"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button23"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button22"
+            android:layout_alignBottom="@id/button22"
+            android:layout_alignLeft="@id/button18"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="23"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button12"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button11"
+            android:layout_alignBottom="@id/button11"
+            android:layout_alignLeft="@id/button7"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="12"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button26"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/button21"
+            android:layout_marginTop="22.0dip"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="26"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button6"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button8"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button7"
+            android:layout_alignBottom="@id/button7"
+            android:layout_alignLeft="@id/button3"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="8"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button5"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button4"
+            android:layout_alignBottom="@id/button4"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button33"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button32"
+            android:layout_alignBottom="@+id/button32"
+            android:layout_alignLeft="@+id/button28"
+            android:layout_alignStart="@+id/button28"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="33"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button15"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button14"
+            android:layout_alignBottom="@id/button14"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="15"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button20"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button19"
+            android:layout_alignBottom="@id/button19"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="20"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button39"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button38"
+            android:layout_alignBottom="@id/button38"
+            android:layout_alignLeft="@id/button34"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="39"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button36"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button37"
+            android:layout_alignBottom="@id/button37"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="36"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button37"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="37"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor"
+            android:layout_below="@+id/button32"
+            android:layout_alignLeft="@+id/button32"
+            android:layout_alignStart="@+id/button32" />
+
+        <Button
+            android:id="@id/button9"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button8"
+            android:layout_alignBottom="@id/button8"
+            android:layout_toRightOf="@id/textView6"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="9"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button4"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_toRightOf="@id/textView6"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button2"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor"
+            android:layout_below="@+id/textView6"
+            android:layout_toLeftOf="@+id/textView6"
+            android:layout_toStartOf="@+id/textView6" />
+
+        <Button
+            android:id="@id/button7"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button6"
+            android:layout_alignBottom="@id/button6"
+            android:layout_alignLeft="@id/button2"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button31"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/button26"
+            android:layout_marginTop="19.0dip"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="31"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button1"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button2"
+            android:layout_alignBottom="@id/button2"
+            android:layout_alignRight="@id/button6"
+            android:background="@android:color/holo_purple"
+            android:onClick="weekclick"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+
+        <Button
+            android:id="@id/button17"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button16"
+            android:layout_alignBottom="@id/button16"
+            android:layout_alignLeft="@id/button22"
+            android:background="@android:color/holo_purple"
+            android:focusable="false"
+            android:onClick="weekclick"
+            android:text="17"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorLink="?actionMenuTextColor" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

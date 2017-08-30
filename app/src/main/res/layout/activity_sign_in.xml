@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_sign_in" android:background="@drawable/signinpage" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11.0dip"
+        android:background="@android:color/transparent"
+        android:text="Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/colorgreypp"
+        android:theme="@style/EditTextStyle" />
+    <Button android:id="@id/login" android:background="@drawable/login" android:layout_width="150.0dip" android:layout_height="90.0dip" android:layout_marginLeft="26.0dip" android:layout_marginTop="11.0dip" android:layout_below="@id/passwordlogin" android:layout_alignLeft="@id/passwordlogin" />
+    <EditText android:textColor="@color/colorgreypp" android:id="@id/passwordlogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_alignLeft="@id/username" android:layout_alignBottom="@id/textView9" android:inputType="textPassword" />
+
+    <TextView
+        android:id="@id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/passwordlogin"
+        android:layout_alignLeft="@id/textView9"
+        android:layout_marginLeft="8.0dip"
+        android:background="@android:color/transparent"
+        android:text="Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/colorgreypp" />
+    <EditText android:textColor="@color/colorgreypp" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:ems="10" android:layout_above="@id/passwordlogin" android:layout_alignParentRight="true" android:inputType="textPersonName" />
+</RelativeLayout>

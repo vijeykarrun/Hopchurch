@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hopchurch.godsgift" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.hopchurch.Application.MyApplicaionClass" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.hopchurch.godsgift.ScrollingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/title_activity_popup" android:name="com.hopchurch.godsgift.popup" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.hopchurch.godsgift.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hopchurch.godsgift.SignIn" android:screenOrientation="portrait"/>
+        <activity android:name="com.hopchurch.godsgift.SignUp" android:screenOrientation="portrait"/>
+        <receiver android:name="com.hopchurch.godsgift.NotificationPublisher"/>
+        <activity android:label="@string/title_activity_prayer__popup" android:name="com.hopchurch.godsgift.Prayer_Popup" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
