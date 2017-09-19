@@ -14,6 +14,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.hopchurch.godsgift.SignUp;
+
+
+
 public class Register {
     public static final String Table_CREATE = "create table USERROLE( ID integer primary key autoincrement,Name text, USERNAME  text,PASSWORD text,Parent text,Month integer,Createddate Date,BabyName text,partnerName text,familyName text ); ";
     private final Context context;
@@ -25,6 +29,9 @@ public class Register {
         this.loginDataBaseAdapter = new LoginDataBaseAdapter(this.context, Table_CREATE);
         this.db = this.loginDataBaseAdapter.open();
     }
+
+    //SignUp mail = new SignUp();
+
 
     public String insertEntry(Person person) {
         String isUser = checkUser(person.getUserName());
@@ -42,6 +49,11 @@ public class Register {
             newValues.put("familyName", person.getFamilyName());
             this.db.insert("USERROLE", null, newValues);
             return "success";
+
+            //2222
+
+
+
         } else if (isUser.equalsIgnoreCase("Existed")) {
             return "Existed";
         } else {
