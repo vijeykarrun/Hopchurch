@@ -8,6 +8,8 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.PorterDuff.Mode;
 import android.os.Bundle;
+
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -44,10 +46,14 @@ public class SignUp extends Activity {
     TextView spinner;
     EditText username;
 
+
     class C01971 implements OnClickListener {
+
+
+
+
         C01971() {
         }
-
         public void onClick(View v) {
             DatePickerDialog mDatePicker = new DatePickerDialog(SignUp.this, SignUp.this.date, SignUp.this.myCalendar.get(1), SignUp.this.myCalendar.get(2), SignUp.this.myCalendar.get(5));
             mDatePicker.getDatePicker().setMaxDate(System.currentTimeMillis());
@@ -59,7 +65,9 @@ public class SignUp extends Activity {
         C01982() {
         }
 
-        public void onClick(View v) {
+       public void onClick(View v) {
+
+
             String nameText = SignUp.this.Name.getText().toString();
             String userText = SignUp.this.username.getText().toString();
             String confirmPassword = SignUp.this.password.getText().toString();
@@ -88,7 +96,12 @@ public class SignUp extends Activity {
                             person.setParent(radioselect);
                             person.setRegisterdate(UtilClass.getDatefromString(SignUp.this.fomartdate));
                             String check = register.insertEntry(person);
+
+                            //mail sending function is given here
+                            sendEmail();
+
                             if (check.equalsIgnoreCase("success")) {
+
                                 Intent intsuccess = new Intent(MyApplicaionClass.getContext(), MainActivity.class);
                                 Toast.makeText(SignUp.this.getApplicationContext(), "Account Successfully Created ", 1).show();
                                 Intent notificationIntent = new Intent(MyApplicaionClass.getContext(), NotificationPublisher.class);
@@ -116,7 +129,10 @@ public class SignUp extends Activity {
                             } else {
                                 return;
                             }
-                        } else {
+
+                        }
+
+                        else {
                             Toast.makeText(SignUp.this.getApplicationContext(), "Kindly fill LMP to proceed", 1).show();
                             return;
                         }
@@ -124,7 +140,9 @@ public class SignUp extends Activity {
                 }
             }
             Toast.makeText(SignUp.this.getApplicationContext(), "Please Enter all the fields", 1).show();
+
         }
+
     }
 
     class C01993 implements OnDateSetListener {
@@ -139,13 +157,19 @@ public class SignUp extends Activity {
         }
     }
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+   // protected void onCreate(Bundle savedInstanceState) {
+     //  super.onCreate(savedInstanceState);
+   private void check(){
         setContentView(com.hopchurch.godsgift.R.layout.activity_sign_up);
         this.Name = (EditText) findViewById(com.hopchurch.godsgift.R.id.namesignup);
         this.username = (EditText) findViewById(com.hopchurch.godsgift.R.id.username);
         this.password = (EditText) findViewById(com.hopchurch.godsgift.R.id.password);
         this.username.getBackground().setColorFilter(-7829368, Mode.SRC_ATOP);
+
+        //String email = username.getText().toString().trim();
+       // SendMail sm = new SendMail(this, email);
+        //sm.execute();
+
         this.password.getBackground().setColorFilter(-7829368, Mode.SRC_ATOP);
         this.Name.getBackground().setColorFilter(-7829368, Mode.SRC_ATOP);
         this.LMP = (TextView) findViewById(com.hopchurch.godsgift.R.id.LMPdate);
@@ -174,4 +198,34 @@ public class SignUp extends Activity {
         this.fomartdate = sdf1.format(this.myCalendar.getTime());
         this.spinner.setText(Week + "");
     }
-}
+
+
+    private void sendEmail() {
+
+        String email = username.getText().toString().trim();
+        SendMail sm = new SendMail(this, email);
+        sm.execute();
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+        check();
+
+        //sendEmail();
+
+
+        }
+
+       }
+
+
+
+   /*
+
+    private void sendEmail() {
+
+        String email = username.getText().toString().trim();
+        SendMail sm = new SendMail(this, email);
+        sm.execute();
+    }*/
