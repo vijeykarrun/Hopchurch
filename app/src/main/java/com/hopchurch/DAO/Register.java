@@ -30,8 +30,6 @@ public class Register {
         this.db = this.loginDataBaseAdapter.open();
     }
 
-    //SignUp mail = new SignUp();
-
 
     public String insertEntry(Person person) {
         String isUser = checkUser(person.getUserName());
@@ -49,11 +47,6 @@ public class Register {
             newValues.put("familyName", person.getFamilyName());
             this.db.insert("USERROLE", null, newValues);
             return "success";
-
-            //2222
-
-
-
         } else if (isUser.equalsIgnoreCase("Existed")) {
             return "Existed";
         } else {
