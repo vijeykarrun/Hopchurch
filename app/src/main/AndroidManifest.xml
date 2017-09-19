@@ -3,6 +3,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.hopchurch.Application.MyApplicaionClass" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/AppTheme">
         <activity android:label="@string/app_name" android:name="com.hopchurch.godsgift.ScrollingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:label="@string/title_activity_popup" android:name="com.hopchurch.godsgift.popup" android:screenOrientation="portrait"/>
