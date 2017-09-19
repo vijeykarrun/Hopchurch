@@ -198,4 +198,24 @@ public class ScrollingActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    //chat module
+
+    public void sendMessage(View v) {
+
+        String toNumber = "+91 73586 20382";
+        toNumber = toNumber.replace("+", "").replace(" ", "");
+
+        Intent sendIntent = new Intent();
+        sendIntent.putExtra("jid", toNumber + "@s.whatsapp.net");
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+        sendIntent.setType("text/plain");
+
+        sendIntent.setPackage("com.whatsapp");
+
+        startActivity(sendIntent);
+
+    }
+
 }
