@@ -96,10 +96,7 @@ public class SignUp extends Activity {
                             person.setParent(radioselect);
                             person.setRegisterdate(UtilClass.getDatefromString(SignUp.this.fomartdate));
                             String check = register.insertEntry(person);
-
-                            //mail sending function is given here
                             sendEmail();
-
                             if (check.equalsIgnoreCase("success")) {
 
                                 Intent intsuccess = new Intent(MyApplicaionClass.getContext(), MainActivity.class);
